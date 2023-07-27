@@ -1,4 +1,4 @@
-package com.poc.design.patterns.creational.singleton;
+package com.poc.design.patterns.singleton;
 
 import java.util.Objects;
 
