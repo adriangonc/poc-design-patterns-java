@@ -11,6 +11,8 @@ public class Singleton {
         var equalInscances = (configuration == configurationV2);
 
         System.out.println("Instancias são iguais? " + equalInscances);
+        System.out.println("Nome do projeto: " + configuration.getProjectName());
+
     }
 
 }

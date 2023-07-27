@@ -14,8 +14,10 @@ public class SingletonConfigurationApi {
     public static SingletonConfigurationApi instance;
 
     //Construtor private para impedir criação de instâncias em outras classes
-    private SingletonConfigurationApi() {
 
+    private String projectName;
+    private SingletonConfigurationApi() {
+        this.projectName = "poc-design-patterns";
     }
 
     //Se já existir uma instância criada retorna ela, se não cria uma nova instância
@@ -29,4 +31,7 @@ public class SingletonConfigurationApi {
         return instance;
     }
 
+    public String getProjectName() {
+        return projectName;
+    }
 }
