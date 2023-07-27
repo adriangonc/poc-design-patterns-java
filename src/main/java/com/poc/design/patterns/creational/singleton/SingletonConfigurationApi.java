@@ -18,6 +18,7 @@ public class SingletonConfigurationApi {
 
     }
 
+    //Se já existir uma instância criada retorna ela, se não cria uma nova instância
     public static SingletonConfigurationApi getInstance() {
         synchronized (SingletonConfigurationApi.class) {
             if(Objects.isNull(instance)) {
