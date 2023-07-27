@@ -7,6 +7,10 @@ public class Singleton {
 
         System.out.println(configuration);
         System.out.println(configurationV2);
+
+        var equalInscances = (configuration == configurationV2);
+
+        System.out.println("Instancias são iguais? " + equalInscances);
     }
 
 }
