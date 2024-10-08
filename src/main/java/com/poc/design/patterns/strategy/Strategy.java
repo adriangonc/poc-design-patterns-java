@@ -26,6 +26,8 @@ public class Strategy {
                 break;
             case "SMS" : orderNotifier.setNotificationStrategy(new SMSNotificationStrategy());
                 break;
+            default:
+                throw new IllegalArgumentException("Canal de notificação inválido!");
         }
 
 
